@@ -1,0 +1,91 @@
+.options-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+}
+
+.image-container {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+}
+
+.option-box {
+  margin: 0 30px;
+  border: 2px solid black;
+  text-align: center;
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-radius: 25%;
+  overflow: hidden;
+  transition: 1s ease;
+  cursor: pointer;
+  background-color: var(--bg-color-dark);
+}
+
+.option-box h2 {
+  color: var(--light-color);
+}
+
+.option-box img {
+  position: relative;
+  right: 30px;
+}
+
+
+.details-window {
+  height: 180px;
+  width: 250px;
+  opacity: 0;
+  background: white;
+  position: absolute;
+  padding: 5px;
+}
+
+.details-window p{
+  contain: content;
+}
+
+.up {
+  bottom: -72.5%;
+}
+.one:hover .up {
+  transform: translateY(-98%);
+  opacity: 0.9;
+  transition: 1s ease;
+}
+
+.upload-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000; /* Ensure the overlay appears above other content */
+}
+
+.blur-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  backdrop-filter: blur(10px); /* Apply the blur effect */
+}
+
+.upload-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2000; /* Ensure the upload container appears above the blurred background */
+}

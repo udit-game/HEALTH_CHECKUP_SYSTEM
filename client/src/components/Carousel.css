@@ -1,0 +1,13 @@
+@keyframes carouselAnimation {
+  0% {
+    transform: translateX(100px);
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+}

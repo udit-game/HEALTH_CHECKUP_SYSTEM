@@ -1,0 +1,21 @@
+.medical-report-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.report-section {
+  margin-bottom: 30px;
+}
+
+.report-title {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.report-content {
+  color: #666;
+  font-size: 18px;
+  line-height: 1.6;
+}

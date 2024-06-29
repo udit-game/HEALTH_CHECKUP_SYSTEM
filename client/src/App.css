@@ -1,0 +1,23 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(
+    to top,
+    hsl(var(--hue), 95%, 99%),
+    hsl(var(--hue), 95%, 84%)
+  );
+}
+
+.plusSign {
+  width: 30rem; /* Adjust the width as needed */
+  height: 30rem; /* Adjust the height as needed */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.15;
+}
